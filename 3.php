@@ -1,5 +1,5 @@
 <?php
-function ArkaFunc($str){
+function kata($str){
     $strlength=strlen($str);
     $split=ceil($strlength/3);
     $num=3;
@@ -26,4 +26,4 @@ function ArkaFunc($str){
 }
 //start
 $str=readline("Masukan String :");
-ArkaFunc($str);
+kata($str);
