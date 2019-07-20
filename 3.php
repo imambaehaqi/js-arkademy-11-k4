@@ -24,9 +24,6 @@ function ArkaFunc($str){
         $r=$r-1;
     }
 }
-//jalankan
+//start
 $str=readline("Masukan String :");
 ArkaFunc($str);
-//ini  program berbasis CLI, Jalankan di secara online
-//masukan string sesuai dengan soal
-//https://repl.it/languages/php_cli
