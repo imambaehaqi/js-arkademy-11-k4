@@ -2,35 +2,35 @@ def evenSum(N):
     if (N < 2):
         return 0
 
-    prevNumber = 0
-    currNumber = 2
-    result = prevNumber + currNumber
+    AngkaSebe = 0
+    AngkaA = 2
+    hasil = AngkaSebe + AngkaA
 
-    while (currNumber < N):
-        nextNumber = 4 * currNumber + prevNumber
+    while (AngkaA < N):
+        AngkaSel = 4 * AngkaA + AngkaSebe
         
-        if (nextNumber > N):
+        if (AngkaSel > N):
             break
 
-        prevNumber = currNumber
-        currNumber = nextNumber
-        result += currNumber
+        AngkaSebe = AngkaA
+        AngkaA = AngkaSel
+        hasil += AngkaA
 
-    return result
+    return hasil
 
 def oddSum(N):
-    prevNumber = 1
-    currNumber = 1
-    result = 0
+    AngkaSebe = 1
+    AngkaA = 1
+    hasil = 0
     
-    while (currNumber < N):
-        if (currNumber % 2 != 0):
-            result += currNumber
+    while (AngkaA < N):
+        if (AngkaA % 2 != 0):
+            hasil += AngkaA
 
-        currNumber += prevNumber
-        prevNumber = currNumber - prevNumber
+        AngkaA += AngkaSebe
+        AngkaSebe = AngkaA - AngkaSebe
 
-    return result
+    return hasil
 
 print(evenSum(1000))
 print(oddSum(100))
